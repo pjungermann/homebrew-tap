@@ -1,4 +1,4 @@
-# Pjungermann Tap
+# pjungermann/tap - Homebrew Tap
 
 ## How do I install these formulae?
 
