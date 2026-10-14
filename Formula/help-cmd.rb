@@ -1,5 +1,5 @@
 class HelpCmd < Formula
-  desc "help command which combines tldr and cheat."
+  desc "Help command which combines tldr and cheat"
   homepage "https://github.com/pjungermann/homebrew-tap"
   url "file:///dev/null"
   version "1.0.0"
@@ -10,9 +10,9 @@ class HelpCmd < Formula
   depends_on "tldr"
 
   def install
-    (bin+"help").write <<~SH
+    (bin/"help").write <<~SH
       #!/bin/sh
-      
+
       tldr "${@}"
       echo
       cheat "${@}"
@@ -35,4 +35,3 @@ class HelpCmd < Formula
     assert_match "Edit text in a scriptable manner", output
   end
 end
-
