@@ -7,7 +7,7 @@ class HelpCmd < Formula
   license "MIT"
 
   depends_on "cheat"
-  depends_on "tldr"
+  depends_on "tlrc"
 
   def install
     (bin/"help").write <<~SH
